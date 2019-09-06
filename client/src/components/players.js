@@ -33,7 +33,7 @@ class Players extends React.Component{
     constructor(){
         super();
         this.state={
-            playerData: {},
+            playerData: [],
 
         }
     }
@@ -53,7 +53,10 @@ class Players extends React.Component{
         return(
             <div>
                 <h1>Soccer</h1>
-                <PlayerData player={this.state.playerData}/>
+                <div>{this.state.playerData.map(player => {
+                return <PlayerData player={player}/> })}
+                
+                </div>
                 <div>{console.log(this.state.PlayerData)}</div>
 
             </div>
