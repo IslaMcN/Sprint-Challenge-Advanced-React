@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../data'
+
 import axios from 'axios';
 
 //  console.log(Object.entries(data));
@@ -9,7 +9,7 @@ class Players extends React.Component{
         axios.get('http://localhost:5000/api/players')
         .then((response) => {
             return(
-                response.data
+                console.log(response)
             )
         })
         .catch(error => {
@@ -19,7 +19,7 @@ class Players extends React.Component{
 
     render (){
         return <>
-            <div>Hi</div>
+            <div>Hello</div>
         </>
     }
     
