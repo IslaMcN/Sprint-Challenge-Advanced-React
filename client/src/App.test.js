@@ -1,12 +1,8 @@
 import React from 'react';
-import * as rtl from '@testing-library/react';
-import 'jest-dom/extend-expect';
-
-afterEach(rtl.cleanup);
+import ReactDOM from 'react-dom';
+import render from '@testing-library/react';
+import App from './App';
 
 it('renders without crashing', () => {
-  const wrapper = rtl.render(
-    <span className="greet">Hi</span>
-  );
-  wrapper.debug()
-});
+  const div 
+})
